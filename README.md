@@ -3,16 +3,15 @@ A python Script to download Leetcode submissions
 
 ##Steps To follow to download your leetcode:
 1. Login to [leetcode](https://leetcode.com/) account on your default browser
-2. Get your session Id for leetcode.com from Browser. If you don't know how to get your session ID then follow [This Link](https://code.google.com/p/procurement/wiki/LoginWithSessionID).
-3. Create a folder to save your leetcode codes.
-4. Keep the downloaded leetcode.py into that folder
+2. Get your session Id for leetcode.com from Browser. If you don't know how to get your session ID then follow [This Link](https://code.google.com/p/procurement/wiki/LoginWithSessionID#How_to_retrieve_the_value).
+3. Create a folder to save your leetcode codes. ( say leetcodeDownloads )
+4. Keep the downloaded leetcode.py into that folder.
    Then directory structure should be like this
 
    ```
   leetcodeDownloads
   |-- leetcode.py
-  |-- README
-
+  |
   ```
 5. Replace PHPSESSID field in leetcode.py file with your session ID (copied in step 2)
 6. run file as 'python leetcode.py
