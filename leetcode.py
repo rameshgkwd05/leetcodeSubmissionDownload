@@ -1,5 +1,5 @@
 import cookielib, urllib2, re, sys, HTMLParser, os.path
-
+# Replace XXXXXXX with your session ID
 PHPSESSID = "XXXXXXXXXXXXXXXXXXXX"
 
 def saveFileByType(code_content, parser, languages=[], postfixes=[]):
@@ -30,8 +30,8 @@ opener.addheaders = [
     ('Cookie', 'PHPSESSID=' + PHPSESSID + '; _ga=GA1.2.1984831265.1389075465; NRAGENT=tk=26e67c3be080fab2'),
     ]
  
- 
-for i in range(1,2):
+# You can update range: instead of 500 you can put maximum page number which contains your submission
+for i in range(1,500):
   page = 'http://oj.leetcode.com/submissions/' + `i`
   print page
   resp = opener.open(page)
